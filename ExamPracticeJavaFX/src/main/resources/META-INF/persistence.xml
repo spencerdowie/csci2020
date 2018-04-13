@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <!-- PERSISTENCE UNIT NAME -->
+    <persistence-unit name="ExamTest" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <!-- LIST OF CLASSES <class>entities.ClassName</class> -->
+        <class>entities.Product</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+
+            <!-- DATABASE NAME -->
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/ExamTest"/>
+
+            <!-- USERNAME -->
+            <property name="javax.persistence.jdbc.user"
+                      value="postgres"/>
+
+            <!-- PASSWORD -->
+            <property name="javax.persistence.jdbc.password"
+                      value="Black0ut"/>
+
+            <property name="eclipselink.ddl-generation"
+                      value="create-tables"/>
+			<property name="eclipselink.ddl-generation.output-mode"
+                      value="database"/>
+            <property name="javax.persistence.schema-generation.database.action"
+                      value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.create-source"
+                      value="metadata"/>
+            <property name="javax.persistence.schema-generation.drop-source"
+                      value="metadata"/>
+        </properties>
+    </persistence-unit>
+</persistence>

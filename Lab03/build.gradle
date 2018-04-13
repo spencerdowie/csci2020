@@ -1,0 +1,45 @@
+apply plugin: 'java'
+
+repositories{
+    mavenCentral();
+}
+
+dependencies{
+    compile 'org.apache.commons:commons-csv:1.5'
+}
+
+sourceCompatibility = 1.7
+version = '1.0'
+jar{
+    manifest{
+        attributes  'Main-Class': 'CSVDemo',
+                    'Implementation-Title': 'CSVDemo-Gradle',
+                    'Implementation-Version': version
+    }
+}
+
+task fatJar(type: Jar){
+    manifest{
+        attributes  'Main-Class': 'CSVDemo',
+                    'Implementation-Title': 'CSVDemo-Gradle',
+                    'Implementation-Version': version
+    }
+    from {configurations.compile.collect {it.isDirectory() ? it : zipTree(it)}}
+    with jar
+}
+
+buildscript {
+    repositories{
+        flatDir dirs: 'C:/Users/100554393/AppData/Local/lxss/home/Dreadbox/csci2020/proguard5.3.3/lib'
+    }
+    dependencies{
+        classpath ':proguard'
+    }
+}
+
+task (minify, dependsOn: 'fatJar', type: proguard.gradle.ProGuardTask){
+    configuration 'proguard.cfg'
+
+    injars 'build/libs/Lab03-1.0.jar'
+    outjars 'build/libs/Lab03-1.0.min.jar'
+}

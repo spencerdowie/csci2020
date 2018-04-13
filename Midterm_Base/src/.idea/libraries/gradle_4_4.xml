@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="gradle-4.4">
+    <CLASSES>
+      <root url="file://C:/Gradle/gradle-4.4.1" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://C:/Gradle/gradle-4.4.1" recursive="false" />
+  </library>
+</component>

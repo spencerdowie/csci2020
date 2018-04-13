@@ -1,0 +1,114 @@
+[
+  {
+    "Year": 2002,
+    "1 bed flats": 166,
+    "2 bed flats": 213,
+    "2 bed houses": 265,
+    "3 bed houses": 332,
+    "4 bed houses": 416
+  },
+  {
+    "Year": 2003,
+    "1 bed flats": 156,
+    "2 bed flats": 216,
+    "2 bed houses": 285,
+    "3 bed houses": 328,
+    "4 bed houses": 380
+  },
+  {
+    "Year": 2004,
+    "1 bed flats": 166,
+    "2 bed flats": 219,
+    "2 bed houses": 257,
+    "3 bed houses": 351,
+    "4 bed houses": 448
+  },
+  {
+    "Year": 2005,
+    "1 bed flats": 121,
+    "2 bed flats": 224,
+    "2 bed houses": 264,
+    "3 bed houses": 364,
+    "4 bed houses": 458
+  },
+  {
+    "Year": 2006,
+    "1 bed flats": 163,
+    "2 bed flats": 259,
+    "2 bed houses": 303,
+    "3 bed houses": 375,
+    "4 bed houses": 486
+  },
+  {
+    "Year": 2007,
+    "1 bed flats": 170,
+    "2 bed flats": 235,
+    "2 bed houses": 326,
+    "3 bed houses": 402,
+    "4 bed houses": 496
+  },
+  {
+    "Year": 2008,
+    "1 bed flats": 255,
+    "2 bed flats": 327,
+    "2 bed houses": 391,
+    "3 bed houses": 510,
+    "4 bed houses": 638
+  },
+  {
+    "Year": 2009,
+    "1 bed flats": 237,
+    "2 bed flats": 321,
+    "2 bed houses": 408,
+    "3 bed houses": 528,
+    "4 bed houses": 758
+  },
+  {
+    "Year": 2010,
+    "1 bed flats": 225,
+    "2 bed flats": 291,
+    "2 bed houses": 386,
+    "3 bed houses": 517,
+    "4 bed houses": 651
+  },
+  {
+    "Year": 2011,
+    "1 bed flats": 197,
+    "2 bed flats": 328,
+    "2 bed houses": 417,
+    "3 bed houses": 510,
+    "4 bed houses": 698
+  },
+  {
+    "Year": 2012,
+    "1 bed flats": 196,
+    "2 bed flats": 331,
+    "2 bed houses": 385,
+    "3 bed houses": 485,
+    "4 bed houses": 647
+  },
+  {
+    "Year": 2013,
+    "1 bed flats": 224,
+    "2 bed flats": 340,
+    "2 bed houses": 407,
+    "3 bed houses": 477,
+    "4 bed houses": 702
+  },
+  {
+    "Year": 2014,
+    "1 bed flats": 199,
+    "2 bed flats": 340,
+    "2 bed houses": 377,
+    "3 bed houses": 458,
+    "4 bed houses": 691
+  },
+  {
+    "Year": 2015,
+    "1 bed flats": 201,
+    "2 bed flats": 335,
+    "2 bed houses": 438,
+    "3 bed houses": 524,
+    "4 bed houses": 707
+  }
+]

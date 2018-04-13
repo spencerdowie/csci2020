@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<!--
+main.fxml
+
+This file contains the user interface for this application.
+-->
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="Open Folder"
+                                  onAction="#onOpenFolder"
+                                  accelerator="Ctrl+O"
+                        />
+                        <SeparatorMenuItem  />
+                        <MenuItem text="Save File"
+                                  onAction="#onSaveFile"
+                                  accelerator="Ctrl+S" />
+                        <SeparatorMenuItem  />
+                        <MenuItem text="Exit"
+                                  onAction="#onExit"
+                                  accelerator="Ctrl+Q"
+                        />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.15">
+           <items>
+               <TreeView fx:id="projectTreeView" minWidth="200" maxWidth="200">
+               </TreeView>
+               <TextArea fx:id="editor" styleClass="code" />
+           </items>
+        </SplitPane>
+    </center>
+</BorderPane>

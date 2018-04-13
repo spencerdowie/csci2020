@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.postgresql:postgresql:42.2.0.jre7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.0.jre7/ca6bf050c73f5425d647cb1c30806dd093e0fe13/postgresql-42.2.0.jre7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.0.jre7/101de04cdb8e3adccdb1f39f96b02c595e77c972/postgresql-42.2.0.jre7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

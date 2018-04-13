@@ -3,3 +3,9 @@
 *.lock
 *.properties
 *.orig
+InClass/*
+proguard5.3.3/*
+*tar.gz
+*.zip
+*.pdf
+*.docx
