@@ -1,6 +1,7 @@
 package dataviz;
 
 import javafx.application.Application;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.chart.BarChart;
@@ -19,6 +20,7 @@ public class Main extends Application
     public void start(Stage stage) throws Exception
     {
         Stage primaryStage = stage;
+        primaryStage.setTitle("Final");
         Canvas canvas = new Canvas();
         canvas.widthProperty().bind(primaryStage.widthProperty());
         canvas.heightProperty().bind(primaryStage.heightProperty());
@@ -52,13 +54,28 @@ public class Main extends Application
             series4.getData().add(new XYChart.Data(key, price.get(3)));
             series5.getData().add(new XYChart.Data(key, price.get(4)));
         }
-        barChart.getData().addAll(series1, series2, series3, series4, series5);
 
-        primaryStage.setTitle("Final");
-        primaryStage.setScene(new Scene(barChart, 600, 400));
+        Scene scene = new Scene(barChart, 1100, 500);
+        scene.getStylesheets().add("stylesheet.css");
+        primaryStage.setScene(scene);
+        barChart.getData().addAll(series1, series2, series3, series4, series5);
+        barChart.setBarGap(1);
         primaryStage.show();
 
-        //storage.saveData(map);
+        /*barChart.lookupAll(".defualt-color0.chart-bar").forEach(n->n.setStyle("-fx-bar-fill: red;"));
+        barChart.lookupAll(".defualt-color1.chart-bar").forEach(n->n.setStyle("-fx-bar-fill: red;"));
+        barChart.lookupAll(".defualt-color2.chart-bar").forEach(n->n.setStyle("-fx-bar-fill: red;"));
+        barChart.lookupAll(".defualt-color3.chart-bar").forEach(n->n.setStyle("-fx-bar-fill: red;"));
+        barChart.lookupAll(".defualt-color4.chart-bar").forEach(n->n.setStyle("-fx-bar-fill: red;"));*/
+
+        storage.deleteAllData();
+        storage.saveData(map);
+        storage.destroy();
+    }
+
+    public void drawBarChart()
+    {
+
     }
 
     public static void main(String[] args)

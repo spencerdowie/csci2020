@@ -19,7 +19,7 @@ public class FileStorage
         this.entityManager = emf.createEntityManager();
     }
 
-    private void deleteAllData()
+    public void deleteAllData()
     {
         entityManager.getTransaction().begin();
         entityManager.createQuery("delete from YearPrice y").executeUpdate();
@@ -42,5 +42,15 @@ public class FileStorage
 
     public void saveData(Map<String, List<Integer>> map)
     {
+        String[] keys = map.keySet().toArray(new String[map.size()]);
+        for(String year : keys)
+        {
+            createYearPrice(year, map.get(year));
+        }
+    }
+
+    public void destroy()
+    {
+        entityManager.close();
     }
 }

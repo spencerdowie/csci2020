@@ -8,7 +8,7 @@
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <!-- LIST OF CLASSES <class>entities.ClassName</class> -->
-        <class>entities.Product</class>
+        <class>dataviz.YearPrice</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"

@@ -1,6 +1,7 @@
 package dataviz;
 
 import javax.persistence.*;
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,7 @@ import java.util.List;
 public class YearPrice
 {
     @Id
-    @SequenceGenerator(name="year_id", sequenceName = "years_id_seq", allocationSize = 1)
+    @SequenceGenerator(name="year_id", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "year_id")
     private long id;
 
@@ -21,6 +22,8 @@ public class YearPrice
         this.year = year;
         this.prices = prices;
     }
+
+    public YearPrice(){};
 
     public String getYear()
     {
