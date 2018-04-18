@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+repositories {
+   mavenCentral()
+}
+
+task(runServer, dependsOn: 'classes', type: JavaExec) {
+   main = 'labexam.server.Server'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runClient, dependsOn: 'classes', type: JavaExec) {
+   main = 'labexam.client.Main'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
+dependencies {
+   compile 'org.postgresql:postgresql:42.2.0.jre7'
+   compile 'com.sun.xml.bind:jaxb-impl:2.3.0'
+   compile 'org.glassfish.jaxb:jaxb-core:2.3.0'
+   compile 'javax.xml.bind:jaxb-api:2.3.0'
+   compile 'javax.persistence:javax.persistence-api:2.2'
+   compile 'org.eclipse.persistence:eclipselink:2.5.1'
+}
